@@ -1,0 +1,13 @@
+
+- Change route name check in frontend layout blade to \Route::currentRouteName() (line 57) -- Done
+- Category Ordering fixed. API routes file changed -- Done
+- Remove all json data types in migrations to support all MySQL versions -- Done
+- Add get mutators to retrieve all booleans as integers and not strings -- Done
+- Catch error in registration email. by-pass this in case user has not set their SMTP credentials. -- Done
+
+
+
+- Do not allow users to purchase the same course twice
+- Do not allow users purchase their own course 
+ Manual Payments and refunds
+- Affiliate program

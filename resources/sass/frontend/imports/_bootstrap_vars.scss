@@ -1,0 +1,17 @@
+// These variables will override the defaults in bootstrap
+$primary: #3F88C5;
+$secondary: #8D99AE;
+$warning: #FCCA46;
+$success: #03B5AA;
+$danger: #CA3C25;
+$light: #EDF2F4;
+
+//$gray-600: #00adb4;
+
+/* Additional colors to merge into bootstrap theme */
+
+$theme-colors: (
+  'special': #EF626C,
+  'dark': #2B2D42,
+  'darkblue': #1e4769
+);

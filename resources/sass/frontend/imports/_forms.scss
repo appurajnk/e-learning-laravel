@@ -1,0 +1,17 @@
+/* Floating labels */
+@import '~@tkrotoff/bootstrap-floating-label/src/bootstrap4-floating-label';
+.floating-label label{
+    height: auto;
+}
+.floating-label > input{
+    border-width: 2px !important;
+}
+
+.floating-label > input:focus{
+    border: 2px solid #027be3;
+}
+
+.floating-label > input + label, 
+.floating-label > textarea + label {
+    top: 10%;
+}

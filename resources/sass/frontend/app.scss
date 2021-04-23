@@ -1,0 +1,113 @@
+@import "../global";
+@import './imports/bootstrap_vars';
+@import 'bootstrap/scss/bootstrap.scss';
+@import './imports/nav';
+@import './imports/forms';
+@import './imports/transitions';
+@import './vendor/utilities/heading';
+@import './vendor/utilities/tabs';
+@import './vendor/utilities/accordion';
+//@import './vendor/utilities/timeline';
+@import './vendor/slick';
+@import './vendor/slick-theme';
+@import './vendor/icons';
+@import './imports/typography';
+@import './vendor/utilities/post-grid';
+@import './vendor/webui';
+@import './imports/base';
+@import './vendor/typeahead';
+@import './custom';
+@import '~mmenu-js/dist/mmenu.css';
+
+@import "~video.js/dist/video-js.min.css";
+@import 'player/youtube';
+
+body, html, #app, #wrapper, .mm-page {
+    height: 100% !important;
+}
+
+.setting-body{
+    min-height: 500px;
+}
+
+.homepage {
+    .hero {
+		position: relative;
+		padding: 60px 15px;
+		overflow: hidden;
+		height: 500px;
+	}
+	// .hero:before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	background: url(/images/homebg.jpg) no-repeat;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	z-index: 0;
+	// 	opacity: 0.9;
+	// 	background-size: cover;
+	// }
+	.hero h1, 
+	.hero p, 
+	.get-started {
+		position: relative;
+		z-index: 1;
+	}
+	.hero p {
+		margin-top: 10px;
+    }
+    
+    .home__how_it_works_container{
+        display: block;
+        border: none;
+        background: -webkit-linear-gradient(-45deg,#00cafb, #02647b);
+        background: -moz-linear-gradient(-45deg,#00cafb, #02647b 100%);
+        background: -ms-linear-gradient(-45deg,#00cafb, #02647b 100%);
+        background: -o-linear-gradient(-45deg,#00cafb, #02647b 100%);
+        background: linear-gradient(-45deg,#00cafb, #02647b);
+    }
+
+    .home__how_it_works{
+        display: flex;
+        margin-top: 0;
+    }
+    .home__how_it_works_col{
+        padding: 20px 25px;
+    }
+    .home__how-it-works-icon{
+        color: #fff;
+        float: left;
+        display: block;
+        margin-right: 16px;
+        margin-top: -2px;
+        font-size: 47px;
+        height: 1em;
+        vertical-align: -8%;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .home__how-it-works-text{
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .home__how_it_works-text-title{
+        font-size: 17px;
+        display: block;
+        color: #fff;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    .home__how_it_works-text-subtitle{
+        color: #fff;
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "name": "rappasoft/laravel-boilerplate",
+    "type": "project",
+    "description": "The Laravel Boilerplate Project.",
+    "keywords": [
+        "framework",
+        "laravel",
+        "boilerplate"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "albertcht/invisible-recaptcha": "^1.9",
+        "altek/accountant": "^1.2",
+        "altek/eventually": "^1.0",
+        "arcanedev/log-viewer": "^5.0",
+        "codezero/laravel-unique-translation": "^1.2",
+        "creativeorange/gravatar": "~1.0",
+        "cyrildewit/eloquent-viewable": "^4.1",
+        "davejamesmiller/laravel-breadcrumbs": "^5.0",
+        "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "hassansin/dbcart": "dev-master",
+        "htmlmin/htmlmin": "^6.0",
+        "intervention/image": "^2.5",
+        "james-heinrich/getid3": "^1.9",
+        "lab404/laravel-impersonate": "^1.4",
+        "langleyfoxall/laravel-nist-password-rules": "^4.0",
+        "laravel/framework": "^6.0",
+        "laravel/socialite": "^4.1",
+        "laravel/tinker": "^1.0",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "mews/purifier": "^3.1",
+        "musonza/chat": "^3.5",
+        "fico7489/laravel-eloquent-join": "dev-master",
+        "glorand/laravel-model-settings": "dev-master",
+        "akaunting/laravel-setting": "dev-master",
+        "joedixon/laravel-translation": "dev-master",
+        "orangehill/iseed": "^2.6",
+        "paypal/rest-api-sdk-php": "^1.14",
+        "pbmedia/laravel-ffmpeg": "^5.0",
+        "razorpay/razorpay": "2.*",
+        "spatie/laravel-html": "^2.22",
+        "spatie/laravel-permission": "^3.0",
+        "spatie/laravel-tags": "^2.5",
+        "spatie/laravel-translatable": "^4.2",
+        "stripe/stripe-php": "^7.0",
+        "torann/geoip": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/costeirs/dbcart"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/appurajnk/laravel-eloquent-join"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/appurajnk/laravel-setting"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/appurajnk/laravel-model-settings"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/appurajnk/laravel-translation"
+        }
+    ],
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
+        "barryvdh/laravel-ide-helper": "^2.6",
+        "codedungeon/phpunit-result-printer": "^0.26.1",
+        "facade/ignition": "^1.4",
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "fzaninotto/faker": "^1.4",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^3.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ],
+        "clear-all": [
+            "@php artisan clear-compiled",
+            "@php artisan cache:clear",
+            "@php artisan route:clear",
+            "@php artisan view:clear",
+            "@php artisan config:clear",
+            "composer dumpautoload -o"
+        ],
+        "cache-all": [
+            "@php artisan config:cache",
+            "@php artisan route:cache"
+        ],
+        "cc": [
+            "composer clear-all",
+            "composer cache-all"
+        ],
+        "phpunit": [
+            "phpunit > output.txt -d memory_limit=2048M"
+        ],
+        "coverage-xml": [
+            "phpunit --coverage-clover ./coverage.xml"
+        ],
+        "coverage-html": [
+            "phpunit --coverage-html ./coverage"
+        ],
+        "coverage-text": [
+            "phpunit --coverage-text"
+        ],
+        "format": [
+            "php-cs-fixer fix --show-progress=estimating --config=.php_cs.dist"
+        ]
+    }
+}

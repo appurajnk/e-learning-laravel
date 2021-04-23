@@ -1,0 +1,86 @@
+// Plugins
+
+// FontAwesome 5
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+// Header Styles
+.read-only, .logged-in-as {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+@for $i from 8 through 40{
+  .font-#{$i}{
+      font-size: #{$i}px !important;
+  }
+}
+
+.btn.active,
+.btn:active,
+button:active,
+button:focus,
+button:hover,
+input:active,
+input:focus,
+input:hover,
+label:focus,
+input[type="text"], 
+select, 
+textarea, 
+textarea:active,
+textarea:focus,
+textarea:hover,
+.custom-select:focus,
+.custom-control-label::before{
+  outline: 0!important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+  // border: 1px solid #ccc !important;
+}
+
+.quill-editor ~ .invalid-feedback{
+  display: block !important;
+}
+
+button{
+  cursor: pointer;
+}
+
+.VueTables__table{
+  font-size: 14px;
+}
+
+.VueTables__table thead{
+  background-color: #f0f3f5 !important;
+}
+
+.VueTables__child-row-toggler {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.VueTables__child-row-toggler--closed::before {
+  font-weight: 900; 
+  content: "\f055";
+  color: green;
+  font-family: "Font Awesome 5 Free";
+}
+
+.VueTables__child-row-toggler--open::before {
+  font-weight: 900; 
+  content: "\f056";
+  font-family: "Font Awesome 5 Free";
+  color: red;
+}
+
+.table > thead > tr > th {
+  border-bottom-color: #17a2b8;
+  font-size: 14px;
+}

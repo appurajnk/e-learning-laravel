@@ -1,0 +1,20 @@
+{
+    "presets": [
+        ["@babel/env", {
+            "forceAllTransforms": true,
+            "targets": {
+                "node": "current"
+            }
+        }]
+    ],
+    "plugins": [
+        [
+          "component",
+          {
+            "libraryName": "element-ui",
+            "styleLibraryName": "theme-chalk"
+          }
+        ]
+    ],
+    "sourceMaps": true
+}

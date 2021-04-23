@@ -1,0 +1,179 @@
+{
+   "1":{
+      "carbon_code": "ar",
+      "php_code": "ar_AR",
+      "name": "Arabic",
+      "is_rtl": 1,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "2":{
+      "carbon_code": "az",
+      "php_code": "az_AZ",
+      "name": "Azerbaijan",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "3":{
+      "carbon_code": "da",
+      "php_code": "da_DK",
+      "name": "Danish",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "4":{
+      "carbon_code": "de",
+      "php_code": "de_DE",
+      "name": "German",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "5":{
+      "carbon_code": "el",
+      "php_code": "el_GR",
+      "name": "Greek",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "6":{
+      "carbon_code": "en",
+      "php_code": "en_US",
+      "name": "English",
+      "is_rtl": 0,
+      "is_default": 1,
+      "is_active": 1
+   },
+   "7":{
+      "carbon_code": "es",
+      "php_code": "es_ES",
+      "name": "Spanish",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "8":{
+      "carbon_code": "fa",
+      "php_code": "fa_IR",
+      "name": "Persian",
+      "is_rtl": 1,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "9":{
+      "carbon_code": "fr",
+      "php_code": "fr_FR",
+      "name": "French",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "10":{
+      "carbon_code": "he",
+      "php_code": "he_IL",
+      "name": "Hebrew",
+      "is_rtl": 1,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "11":{
+      "carbon_code": "id",
+      "php_code": "id_ID",
+      "name": "Indonesian",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "12":{
+      "carbon_code": "it",
+      "php_code": "it_IT",
+      "name": "Italian",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "13":{
+      "carbon_code": "ja",
+      "php_code": "ja-JP",
+      "name": "Japanese",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "14":{
+      "carbon_code": "nl",
+      "php_code": "nl_NL",
+      "name": "Dutch",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "15":{
+      "carbon_code": "no",
+      "php_code": "no_NO",
+      "name": "Norwegian",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "16":{
+      "carbon_code": "pt_BR",
+      "php_code": "pt_BR",
+      "name": "Brazilian Portuguese",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "17":{
+      "carbon_code": "ru",
+      "php_code": "ru-RU",
+      "name": "Russian",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "18":{
+      "carbon_code": "sv",
+      "php_code": "sv_SE",
+      "name": "Swedish",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "19":{
+      "carbon_code": "th",
+      "php_code": "th_TH",
+      "name": "Thai",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "20":{
+      "carbon_code": "tr",
+      "php_code": "tr_TR",
+      "name": "Turkish",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "21":{
+      "carbon_code": "uk",
+      "php_code": "uk-UA",
+      "name": "Ukrainian",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   },
+   "22":{
+      "carbon_code": "zh",
+      "php_code": "zh-CN",
+      "name": "Chinese",
+      "is_rtl": 0,
+      "is_default": 0,
+      "is_active": 0
+   }
+}
+

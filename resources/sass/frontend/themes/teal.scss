@@ -1,0 +1,27 @@
+$red: #00b1dc;
+$gradient_darker: #02647b;
+
+.homepage .home__how_it_works_container,
+.jumbotron__inner {
+    background: linear-gradient(-45deg,$red 0%,$gradient_darker 100%) !important;
+}
+.nav__search_wrapper .gabs__input_group .btn-link[type=submit] {
+    color: $red;
+}
+.btn-link:hover {
+    background: $red !important;
+    color: #FFF !important;
+}
+footer {
+    border-bottom: 6px solid $red !important;
+}
+.tc-tabs-style6 .nav-tabs .nav-item.show .nav-link, 
+.tc-tabs-style6 .nav-tabs .nav-link.active {
+    background-color: $gradient_darker !important;
+}
+
+.filters-block .active, 
+.filters-block .active, 
+.filters-block .active:hover{
+    background: $red !important;
+}

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>ArcInspire - Documentation</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Udemy Clone Script Documentation">
+    <meta name="author" content="Neba Funwi-gabga">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-light.min.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo">
+						<a class="navbar-brand" href="index.html">
+							<img class="logo-icon mr-2" src="assets/images/coderdocs-logo.svg" alt="logo">
+							<span class="logo-text">
+								Arc<span class="text-alt">Inspire</span>
+							</span>
+						</a>
+					</div>
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <!-- <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div> -->
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="http://arcinspire.com"><i class="fas fa-globe fa-fw"></i></a></li>
+			            <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li> -->
+		            </ul><!--//social-list-->
+		            <!-- <a href="" class="btn btn-primary d-none d-lg-flex">Download</a> -->
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Start</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">License Information</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Server Requirements</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Database Connection</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Admin User</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Mail Settings</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-7">Finish</a></li>
+					
+					<!-- SECTION 2: Site Settings -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Site Settings</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Video Upload</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Site Currency</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Payment Gateways</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Mail Settings</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-6">License Information</a></li>
+					
+
+					<!-- SECTION 3: Financial Transactions -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>Financial Transactions</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Discount Coupons</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Purchasing a course</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Refunds and Periods</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Paying Instructors</a></li>
+					
+					
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Updates</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Updating the application</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Upcoming Features</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Changelog</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
+					 -->
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+						<h1 class="docs-heading">Installation <span class="docs-time">Last updated: 2019-10-01</span></h1>
+						<section class="docs-intro">
+							<p>
+								ArcInspire is designed to run on both <code>Shared hosting</code> (eg GoDaddy, InmotionHosting, etc) and 
+								<code>Virtual Private Server (VPS)</code> (eg DigitalOcean) or <code>Dedicated Server</code>, and is designed to run on 
+								<code>Linux Operating Systems</code>.
+							</p>
+							<p>
+								However, to make optimal use of the software and to be able to customize your resources (eg to be able to install and use 
+								the optional <code>FFMpeg for video encoding</code>, we recommend that you use a VPS or Dedicated Server for any reasonable production).
+							</p>
+						</section>
+						<hr />
+						<h2 class="section-heading">Server Requirements</h2>
+						<p>
+							You need to make sure your server meets the following requirements for the basic setup:
+						</p>
+						<ul>
+							<li>PHP >= 7.2.0</li>
+							<li>BCMath PHP Extension</li>
+							<li>Ctype PHP Extension</li>
+							<li>JSON PHP Extension</li>
+							<li>Mbstring PHP Extension</li>
+							<li>OpenSSL PHP Extension</li>
+							<li>PDO PHP Extension</li>
+							<li>GD Extension</li>
+							<li>cURL Extension</li>
+							<li>ZIP Extension</li>
+							<li>Tokenizer PHP Extension</li>
+							<li>XML PHP Extension</li>
+							<li>Apache mod_rewrite</li>
+							<li>memory_limit >= 100MB in PHP.ini</li>
+							<li>post_max_size >= 30MB in PHP.ini</li>
+							<li>upload_max_filesize >= 30MB in PHP.ini</li>
+							<li>file_uploads enabled in PHP.ini</li>
+							<li>MySQL Database</li>
+						</ul>
+					</header>
+					
+				    <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Start Wizard</h2>
+						<p>
+							ArcInspire comes with an installation wizard which, hopefully makes it easy to install. To get started, do the following:
+						</p>
+						<ol>
+							<li>Download the package from your Envato Account</li>
+							<li>Unzip the package to any convinient location on your local computer</li>
+							<li>
+								Inside the unzipped package, there is a zip file called <code>upload_version_xx_xx.zip</code>
+								Upload the contents of this ZIP file into your website directory. You can use FileZilla to upload the ZIP file and unzip it in your server,
+								or use any other upload means suitable to you. Just make sure you upload all the contents of this file.
+							</li>
+							<li>
+								After uploading the files, go to your web browser and access your website url. This will automatically take you to the installation wizard.
+							</li>
+							<li>
+								Follow the following steps to install the package.
+							</li>
+						</ol>
+					</section><!--//section-->
+					
+					<!-- LICENSE INFORMARION -->
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">License Information</h2>
+						<p>
+							To install ArcInspire, you need to provide your <b>Envato Username</b> and <b>Purchase Code</b>.
+							Follow <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-" target="_blank">these instructions</a>
+							to obtain the Purchase Code for this item.
+						</p>
+						<p>
+							Enter the Purchase Code and Username in the form on the START screen and click on "Submit" to validate the license information.
+							If the verification is correct, you can click the "Next" button to proceed with the installation.
+						</p>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/License.png" data-title="License Information" data-toggle="lightbox">
+								<img class="figure-img img-fluid shadow rounded" src="assets/images/License.png" alt="" style="width: 400px;">
+							</a>
+						</figure>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Server Requirements</h2>
+						<p>
+							ArcInspire is developed with Laravel v6.0 (The latest version). Therefore to get the script working,
+							your server must meet 
+							<a href="https://laravel.com/docs/5.8/installation#server-requirements" target="_blank">
+								these basic requirements for running a laravel application.
+							</a>
+						</p>
+						<p>
+							Besides the basic server requirements for running Laravel, 
+							there are other requirements that your server must meet, such as 
+							<code>values from PHP.ini file</code> to handle file uploads, folder permissions etc. 
+							On the "System Requirements" screen, you can see whether or not your server meets these 
+							requirements. Please ensure that you see a "Green Check mark" against each requirement before you proceed.
+						</p>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/RequirementsLG.png" data-title="Requirements" data-toggle="lightbox">
+								<img class="figure-img img-fluid shadow rounded" src="assets/images/RequirementsSM.png" alt="" style="width: 400px;">
+							</a>
+						</figure>
+					</section><!--//section-->
+
+					<!-- DATABASE -->
+					<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">Database Connection</h2>
+						<p>
+							The script requires <code>MySQL</code> database. On your server,
+							create a new MySQL database, copy the 
+							<code>hostname, username, password and port</code> of your database 
+							connection, and enter them in the "Database Configuration" form as shown below:
+						</p> 
+						<p> 
+							Then click on "Connect to Database" to establish the connection. If the connection is successful, you 
+							can click on "Next" to proceed. Otherwise, review the information entered and try again.
+						</p>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/Database.png" data-title="Database connection" data-toggle="lightbox">
+								<img class="figure-img img-fluid shadow rounded" src="assets/images/Database.png" alt="" style="width: 400px;">
+							</a>
+						</figure>
+					</section><!--//section-->
+
+					<!-- DATABASE -->
+					<section class="docs-section" id="item-1-5">
+						<h2 class="section-heading">Admin User</h2>
+						<p>
+							In the "SETTINGS" stage, you can create the <b>Administrator User Account</b> and also provide 
+							the site name. Not the credentials of the Admin User as you will need them to login to the Admin panel.
+						</p> 
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/CreateAdmin.png" data-title="Admin User" data-toggle="lightbox">
+								<img class="figure-img img-fluid shadow rounded" src="assets/images/CreateAdmin.png" alt="" style="width: 400px;">
+							</a>
+						</figure>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-1-6">
+						<h2 class="section-heading">Mail Settings</h2>
+						<p>
+							You must provide working MAIL settings to enable 
+							the script send system emails. If your mail settings are wrong, users will not be able to 
+							register to the site (for example), as they need to receive a confirmation email to verify their 
+							account when they register. 
+						</p>
+						<p>
+							ArcInspire can work with any of the default Laravel mail drivers -
+							<code>SMTP, Mailgun, Sparkpost, Postmark, SES and Sendmail</code>. 
+							On the form, select the mail driver you would like to use and enter the relevant information for the 
+							selected driver. 
+						</p>
+						<p>
+							NB: The free version of Mailgun should be sufficient for this script as it provides 10,000 free emails / month.
+						</p>
+						<p>
+							If you are using SMTP, you can use a service like 
+							<a href="http://smtper.net" target="_blank">SMTPer.net</a> to test your credentials.
+						</p>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/MailSettings.png" data-title="Mail Settings" data-toggle="lightbox">
+								<img class="figure-img img-fluid shadow rounded" src="assets/images/MailSettings.png" alt="" style="width: 400px;"></a>
+						</figure>
+					</section><!--//section-->
+					
+					
+					<section class="docs-section" id="item-1-7">
+						<h2 class="section-heading">Finish</h2>
+						<p>
+							On the FINISH screen, you can choose to <code>Import Sample Data</code> to your site.
+							This will add basic site data (similar to the demo site) to your database to get you started.
+							You will be able to relete all the sample data from the Admin Panel with just a single click.
+						</p>
+						<p>
+							Then just click "Finish" to complete your installation. Once done, you will be redirected to the homepage.
+						</p>
+						<figure class="figure docs-figure py-3">
+							<a href="assets/images/Finish.png" data-title="Finish" data-toggle="lightbox">
+								<img class="figure-img img-fluid shadow rounded" src="assets/images/Finish.png" alt="" style="width: 400px;">
+							</a>
+						</figure>
+					</section><!--//section-->
+			    </article>
+				
+				
+
+
+
+
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Site Configuration</h1>
+					    <section class="docs-intro">
+						    <p>
+								Once ArcInspire is installed, it is advisable to login as Admin and setup the configuration for the entire site.
+								There are default configuration values entered during installation, but these are minimal. 
+							</p>
+							<ol>
+								<li>Login to the site with the admin user you created during installation. You will be redirected to the Admin Dashboard.</li>
+								<li>In the Admin Dashboard, click on "Settings" on the left side menu.</li>
+								<li>Then go through the various setting options as described below</li>
+							</ol>
+						</section><!--//docs-intro-->
+				    </header>
+				    <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Site Settings</h2>
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> Site Info
+						</h5>
+						<p>
+							Under <b>Site Settings</b>, you need to enter the following:
+						</p>
+						<ul>
+							<li>
+								<b>Site Mode:</b> If checked, the site will be set to demo mode and this will disable certain requests 
+								(eg all <code>DELETE</code>, <code>STORE</code> and <code>UPDATE</code> operations will be disabled).
+							</li>
+							<li>
+								<b>Redirect to HTTPS:</b> If checked, all site assets will be served via <code>HTTPS</code>. 
+								Ensure that you have an SSL Certificate installed on your server else links will be broken.
+							</li>
+							<li>
+								<b>Site URL:</b> It is important that you enter the correct site URL (your site domain name).
+								This will be used in all email links (eg for account activation). The default is the current site domain.
+							</li>
+							<li>
+								<b>Site Name:</b> This is the site identifier and will appear on the Browser Title, Footer, system emails etc.
+							</li>
+							<li>
+								<b>Site Description and Keywords:</b> These are used in the Description and Keywords Meta Tags of your site.
+							</li>
+							<li>
+								<b>Site Currency:</b> This is the default currency of your site. All course purchases will be charged using this 
+								currency. All other currencies will only be used to display conversions to the user, but ALL charges will be in the 
+								Site Currency. You can change the dropdown list by adding or removing currencies under the "Currency Settings" page.
+							</li>
+						</ul>
+
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> Author Earnings
+						</h5>
+						<p>
+							This specifies the percentage value of each sale that should go to the course instructor.
+						</p>
+						<ul>
+							<li>
+								<b>Organic Sales Percen:</b> Percentage paid to course instructor when the sale occurs organically 
+									(ie when the sale does not result from the Instructor's PROMO code.)
+							</li>
+							<li>
+								<b>Promo Sales Percent:</b> Percentage paid to course instructor when the course is purchased using a discount 
+								coupon created by the instructor.
+							</li>
+						</ul>
+
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> Images
+						</h5>
+						<p>
+							Here, you can upload the site Logo, Favicon and the banner image that appears on the homepage of the site.
+						</p>
+						<ul>
+							<li>
+								<b>Logo:</b> Should have a transparent background.
+							</li>
+							<li>
+								<b>Favicon:</b> Square image, <code>.png</code> or <code>.ico</code>
+							</li>
+							<li>
+								<b>Homepage Banner Image:</b>, preferably <code>1440x512</code> in size.
+							</li>
+						</ul>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Video Content Settings</h2>
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> Queues
+						</h5>
+						<p>
+							Here, you can manage how you want the application to process jobs. This is especially
+							how you want video uploads to be handled. There are two options:
+						</p>
+						<ul>
+							<li><b>Database:</b> 
+								With this option, when a user uploads a video, it will be logged in a queue in the database 
+								and processed accordingly. The user will not have to wait for the video upload to complete. The 
+								video will be placed in a queue and processed in the background.
+								We highly recommend that you choose this option so as not to keep users waiting for video uploads
+								to complete (especially if you are using FFMpeg to process videos).
+
+								<div class="alert alert-info">
+									<b>NB</b> If you decide to use Database Driver for queuing (and we recommend that you do), then in your 
+									server, you will need to set up a cron job with the following expression:
+									<br />
+									<code>
+										*/5 * * * * /path-to-php/php /path-to-your-website/artisan schedule:run >> /dev/null 2>&1
+									</code>
+									<p>For instance:</p>
+									<code>
+										*/5 * * * * /usr/local/bin/php /home/myusername/public_html/artisan schedule:run >> /dev/null 2>&1
+									</code>
+									<p>
+										This command will execute the task scheduler every 5 minutes and process any videos that are in the queue. 
+										The Scheduler runs an internal command to process videos every 10 minutes.
+									</p>
+								</div>
+							</li>
+							<li><b>Sync:</b> 
+								With the Sync queue processing, nothing is queued for later. All queues are processed 
+								instantly and the user will need to wait for the process to complete before they proceed with the video 
+								upload process.
+							</li>
+						</ul>
+
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> Video Settings
+						</h5>
+						<ul>
+							<li><b>Video Provider:</b>
+								With ArcInspire, Intructors can Upload video content to their courses but they can also use YouTube videos.
+								By default, both Video Upload and YouTube are enabled. If you would want to serve only one of these options, 
+								select the corresponding choice.
+							</li>
+							<li>
+								<b>Enable video encoding:</b>
+								This option is specifically for anyone running their site on a server where they have control to 
+								install <code>FFMpeg</code> for video processing. <code>FFMpeg</code> is a PHP package that allows
+								for video processing (encoding). If you select this option, then each video uploaded by the users 
+								will be processed in 2 different definitions - a large and a small sized video. This is good if you 
+								wish to serve videos in both HD and SD versions. If Video Encoding is enabled, then you can also specify 
+								the HD and SD dimensions for videos (defaults as 1280x720 for 720HD videos and 640x360 for 360SD videos).
+							</li>
+							<li>
+								<b>Video Max Size:</b> This is the maximum size of video that an Instructor can upload. The default is 
+								20MB. 
+								<span class="text-info"><b>NOTE:</b> Ensure that the <code>post_max_size</code> and <code>file_upload_size</code> parameters in your 
+								<code>PHP.ini</code> are greater than the value you choose here to allow your server handle large file uploads.
+								</span>
+							</li>
+							<li>
+								<b>Video Upload Location:</b> 
+								You can choose to save uploaded videos to your local server or to Amazon s3 bucket. If you choose to upload to 
+								Amazon s3, then you will also need to provide the Amazon s3 credentials such as
+								<code>AWS Access ID</code>, <code>AWS Region</code>, <code>s3 Bucket</code> and <code>AWS URL (optional)</code>
+							</li>
+						</ul>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Site Currency Settings</h2>
+						<p>
+							ArcInspire supports multiple currencies in the frontend, but all payment is only collected in the main currency.
+							Users will be able to switch currencies and view prices in other currencies base on the settings in the admin panel.
+						</p>
+						<p>
+							Each currency has a <code>Conversion Rate</code>. The Conversion Rate of the Default Currency must be equal to 1.
+							The conversion rates of all other currencies should be relative to the default currency. 
+						</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">Payment Gateways</h2>
+						<p>
+							At the moment, ArcInspire supports PayPal payment and Credit Card Processing. You can choose to use one or both ot these options.
+						</p>
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> PayPal Payment
+						</h5>
+						<p>
+							In order to use PayPal payment, you need to create and provide your PayPal API client ID and Secret Key.
+							You need to enter both the Demo (Sandbox) keys as well as the LIVE keys. Follow these steps to obtain the API
+							credentials on PayPal:
+						</p>
+						<ol>
+							<li>Go to <a href="https://developer.paypal.com/" target="_blank">PayPal Developer Account</a> and login</li>
+							<li>In the "My Application & Credentials" menu click on "Create App" button to create a new all.</li>
+							<li>
+								Under the "App Settings", make sure that the the following features are enabled:
+								<ul>
+									<li>Accept Payments</li>
+									<li>Invoicing</li>
+									<li>Payouts</li>
+									<li>Disputed</li>
+								</ul>
+							</li>
+							<li>
+								Copy the <b>Client ID</b> and <b>Secret</b> keys and enter them in your Admin Dashboard.
+							</li>
+							<li>
+								Do same for both LIVE and SANDBOX keys. Note that for LIVE keys, you may have to manually
+								request PayPal to add the <b>Payouts</b> feature.
+							</li>
+						</ol>
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> Credit Card Processors
+						</h5>
+						<p>
+							At the moment, there are two credit card processors available - <b>Stripe</b>
+							and <b>RazorPay</b>. You can only choose to use on of these options, and in each case, you also need to
+							provide the corresponding API Keys.
+						</p>
+						<h5 class="pt-3">
+							<i class="fas fa-credit-card mr-1"></i> Stripe
+						</h5>
+						<p>For Stripe, you can go to 
+							<a href="https://stripe.com" target="_blank">Stripe.com</a> to create a Free account if you do not have one yet.
+							Once an account is created, you can 
+							<a href="https://stripe.com/docs/keys" target="_blank">follow the documentation on the Stripe Help page </a>
+							to obtain the API Credentials  for both Sandbox (Test) and Live environments.
+						</p>
+
+						<h5 class="pt-3">
+							<i class="fas fa-credit-card mr-1"></i> RazorPay
+						</h5>
+						<p>This is a Payment Gateway for India and supports multiple currencies. You can go to
+							<a href="https://razorpay.com/" target="_blank">Razorpay.com</a> to create a Free account if you do not have one yet.
+							Once an account is created, you can 
+							<a href="https://razorpay.freshdesk.com/support/solutions/articles/11000060257-how-do-i-generate-the-api-keys-" target="_blank">
+								follow the documentation on the RazorPay Help page
+							</a> to obtain the API Credentials for both Sandbox and Live environments.
+						</p>
+
+						<h5>
+							Note: Make sure to turn your Payment Modes <b>(PayPal mode, Stripe Mode and/or RazorPay mode)</b> from "Sandbox" to "Live" 
+							when you are ready to start collecting live payments.
+						</h5>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-5">
+						<h2 class="section-heading">Mail Settings</h2>
+						<p>
+							You must provide working MAIL settings to enable 
+							the script send system emails. If your mail settings are wrong, users will not be able to 
+							register to the site (for example), as they need to receive a confirmation email to verify their 
+							account when they register. 
+						</p>
+						<p>
+							ArcInspire can work with any of the default Laravel mail drivers -
+							<code>SMTP, Mailgun, Sparkpost, Postmark, SES and Sendmail</code>. 
+							On the form, select the mail driver you would like to use and enter the relevant information for the 
+							selected driver. 
+						</p>
+						<p>
+							NB: The free version of Mailgun should be sufficient for this script as it provides 10,000 free emails / month.
+						</p>
+						<p>
+							If you are using SMTP, you can use a service like 
+							<a href="http://smtper.net" target="_blank">SMTPer.net</a> to test your credentials.
+						</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-6">
+						<h2 class="section-heading">License Information</h2>
+						<p>
+							To be able to dowmload update packages, you need to provide your <b>Envato Username</b> and a valid <b>Purchase Code</b>.
+							Follow <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-" target="_blank">these instructions</a>
+							to obtain the Purchase Code for this item.
+						</p>
+						<p>
+							Enter the Purchase Code and Envato Username in the form. If these credentials are not valid, update processes will fail.
+						</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Financial Transactions</h1>
+					    <section class="docs-intro">
+						    <p>
+								ArcInspire offers the possibility for <code>course purchase</code>, <code>management of discount coupons</code>, 
+								<code>processing of purchase refunds</code> and <code>paying out earnings</code> to course instructors.
+							</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Discount Coupons</h2>
+						<p>
+							There are two categories of discount coupons - <code>Sitewide Coupons</code> and <code>Individual Course Coupons</code>
+						</p>
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> Sitewide Coupons
+						</h5>
+						<p>
+							This is a coupon that is created by the site Administrator and can be applied to any course on the platform. When a user 
+							goes to their shopping cart, the system checks if there is any valid sitewide coupon in the database and if there is, it automatically applies the 
+							coupon to the shopping cart. Sitewide discount coupons can be managed from the Admin panel via the
+							<code>Discount Coupons</code> menu link. There can only be one active Sitewide coupon at any given time.
+						</p>
+						<p>
+							If a course is purchased using a Sitewide coupon, then the sale is considered to be <code>Organic</code>, in which case the 
+							instructor's commission from that sale is calculated based on the <code>Organic sales percent</code> in the Author earnings setting
+							of the admin panel (default is 40%).
+						</p>
+
+						<h5 class="pt-3">
+							<i class="fas fa-cog mr-1"></i> Course-specific Coupons
+						</h5>
+						<p>
+							These coupons are created by the course intructor in their course management dashboard, and can be applied only to the specific course.
+							The instructor can create as many coupons for a course as they want.
+						</p>
+						<p>
+							If a course is purchased using a course-specific coupon, then the sale is considered to be <code>Promo</code>, in which case the 
+							instructor's commission from that sale is calculated based on the <code>Promo sales percent</code> in the Author earnings setting
+							of the admin panel (because it means the sale originated from the instructor's promotion).
+						</p>
+
+						<p>
+							When admin or intructors want to create a new coupon, they are presented with two options - Either a "FREE" coupon 
+							(which students can use to enroll to the course for free), or a "Discounted Price" which is a percentage of the price that
+							should be reduced (minimum is 5%).
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Purchasing a Course</h2>
+						<p>
+							ArcInspire comes with a shopping cart. Multiple courses can be purchased at once in a cart, and one or more discount coupons can be applied to the cart.
+							If a course price is 0 (Free), then the user does not go through the cart but is directly presented with a button to enroll into the course. Otherwise,
+							the user can proceed to the shopping cart (where they can add/remove coupons or remove items from the cart) and then proceed to the checkout page.
+						</p>
+						<p>
+							Course purchase can be done with PayPal or Credit Card. Please see the <a href="#item-2-4">Payment Gateways</a> section for how to setup the payment 
+							providers in the admin panel.
+						</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Refunds and Periods</h2>
+						<p>
+							Instructors are paid monthly, following pre-generated 30-day periods. Once a user makes a purchase on the site,
+							each payment is attached to a specific period - usually 2 months ahead of the current period. This is because the systems allows 
+							a <code>30-day money-back guarantee</code> for all purchases. So once a purchase is made, the student has 30 days to request a refund 
+							(no questions asked). So if a user requests a refund, the administrator can process it directly in the admin panel. Once processed, the student is 
+							unenrolled to the course and any reviews the student might have written for the course are deleted. The student is also notified by email.
+						</p>
+						<p>
+							All refunds are made directly to the same payment method the user used to make the initial purchase. So if a course was purchased with PayPal, the 
+							refund will be made directly to the same PayPal account. Same with credit cards.
+						</p>
+						<p>
+							Once a payment period is over, the Admin will be able to "Close the period" from the admin panel under the
+							<code>Finance > Payouts</code> menu. You will not be allowed to close a period that has not ended. Once the period is closed,
+							all payouts for all users are calculated for that period immediately (taking into account any refunds that might have been made for that period)
+						</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-3-4">
+						<h2 class="section-heading">Instructor Payouts</h2>
+						<p>
+							Once a payment period is closed and payouts automatically calculated, the Admin will see a list of all payouts for the site. Any payout with the 
+							value of 0 is automatically marked as "Completed". <code>ALL PAYOUTS ARE MADE USING PAYPAL</code>. So if an instructor has a payout but has not 
+							provided their PayPal Email Accounts (which they can do in the user account settings in the frontend), the Admin will be presented with a 
+							button to send an Email reminder to the Instructor to enter their PayPal email address. 
+						</p>
+						<p>
+							If an instructor has a Payout greater than 0 and has provided their PayPal account, they admin will be able to directly process the PayPal payment 
+							from ArcInspire.
+						</p>
+						<p>
+							<b>NOTE: </b>Before processing any payouts, ensure that you have enough money in the Admin PayPal account to send out (Of Course!).
+						</p>
+						<p>Once a payment is sent to the instructor, the status is marked as "Complete" and the instructor is notified by email.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Updates</h1>
+					    <section class="docs-intro">
+							<p>ArcInspire provides an easy way for the Admin to update the application</p>
+						</section>
+				    </header>
+				    <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Updating the application</h2>
+						<ul>
+							<li>Go to the Admin Panel. Once in the admin panel, the application will automatically
+								check for updates on our remove server.
+							</li>
+							<li>
+								If an update exists, you will see a notice with a button: <code>Update Now!</code>. Click on this button and wait for the update to complete.
+							</li>
+						</ul>
+					</section>
+				    <section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Upcoming Features</h2>
+						<ul>
+							<li>
+								Add Translation Files for Multilingualism
+							</li>
+							<li>
+								Add more Payment Gateways
+							</li>
+							<li>
+								Add Quizzes to lessons
+							</li>
+							<li>
+								Add file attachments to lessons
+							</li>
+							<li>
+								Add certificate of completion to courses
+							</li>
+							<li>
+								Add RTL CSS
+							</li>
+							<li>
+								Create Mobile App
+							</li>
+						</ul>
+					</section>
+				    <section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Changelog</h2>
+						<div class="docs-code-block">
+							<div class="d-flex justify-content-between">
+								<h4>Version 1.0.0</h4>
+								<span>Released: 01-Oct-2019</span>
+							</div>
+							<code class="shadow-sm coffeescript hljs">
+								Initial Release
+							</code>
+						</div>
+					</section>
+					
+					<!-- <section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Section Item 4.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section>
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section> -->
+			    </article>
+			    
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright text-muted">Template by &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+				        <!-- <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul> -->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+

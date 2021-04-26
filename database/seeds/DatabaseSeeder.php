@@ -42,29 +42,29 @@ class DatabaseSeeder extends Seeder
             'sections',
             'courses'
         ]);
-
-        // $this->call(CategoriesTableSeeder::class);
-        // $this->call(CountrySeeder::class);
-        // $this->call(PeriodsTableSeeder::class);
-        // $this->call(CurrenciesTableSeeder::class);
-        // $this->call(SettingsTableSeeder::class);
-        // $this->call(LanguageSeeder::class);
-        // $this->call(PagesTableSeeder::class);
+        $this->disableForeignKeys();
+        $this->call(CategoriesTableSeeder::class);
+        $this->call(CountrySeeder::class);
+        $this->call(PeriodsTableSeeder::class);
+        $this->call(CurrenciesTableSeeder::class);
+        $this->call(InitialSettingsSeeder::class);
+        $this->call(LanguageSeeder::class);
+        $this->call(PagesTableSeeder::class);
         
-        //$this->call(AuthTableSeeder::class);
+        $this->call(AuthTableSeeder::class);
         
-        // $this->call(AdminUserTableSeeder::class);
-        // $this->call(UsersTableSeeder::class);
-        // $this->call(RolesTableSeeder::class);
-        // $this->call(PermissionsTableSeeder::class);
-        // $this->call(ModelHasRolesTableSeeder::class);
-        // $this->call(CoursesTableSeeder::class);
-        // $this->call(CourseTargetsTableSeeder::class);
-        // $this->call(SectionsTableSeeder::class);
-        // $this->call(LessonsTableSeeder::class);
-        // $this->call(VideosTableSeeder::class);
-        // $this->call(CouponsTableSeeder::class);
-        // $this->call(CouponsTableSeeder::class);
+    //   $this->call(AdminUserTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
+        $this->call(RolesTableSeeder::class);
+        $this->call(PermissionsTableSeeder::class);
+        $this->call(ModelHasRolesTableSeeder::class);
+        $this->call(CoursesTableSeeder::class);
+        $this->call(CourseTargetsTableSeeder::class);
+        $this->call(SectionsTableSeeder::class);
+        $this->call(LessonsTableSeeder::class);
+        $this->call(VideosTableSeeder::class);
+        $this->call(CouponsTableSeeder::class);
+        $this->call(CouponsTableSeeder::class);
         
         $this->enableForeignKeys();
         
